@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: monospace;
+}
+
+table, tr, th, td{
+    border: 13px solid black;
+    
+}
+
+#myCalc button{
+    width: 100%;
+    background-color: #161410;
+}
+
+#myCalc button:hover{
+    transition: .5s all ease-in-out;
+    background-color: #d8d5d5;
+    color: black;
+}
+
+td>*{
+    padding: 15px;
+    font-size: 1.5em;
+    color: #faf8f5;
+}
+
+td>input{
+    color: black;
+}
+#myCalc{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    text-align: center;
+}
+table{
+    border-radius: 5px;
+    background-color: black;
+}

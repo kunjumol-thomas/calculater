@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="myCalc">
+        <h1>CALCULATOR</h1>
+        
+        <table>
+            <tr>
+                <td colspan="3">
+                    <input  type="text" id="display" >
+                </td>
+                <td><button id="ac">AC</button></td>
+            </tr>
+            <tr>
+                <td><button id="num7">7</button></td>
+                <td><button id="num8">8</button></td>
+                <td><button id="num9">9</button></td>
+                <td><button id="numx">x</button></td>
+            </tr>
+            <tr>
+                <td><button id="num4">4</button></td>
+                <td><button id="num5">5</button></td>
+                <td><button id="num6">6</button></td>
+                <td><button id="num-">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="num1">1</button></td>
+                <td><button id="num2">2</button></td>
+                <td><button id="num3">3</button></td>
+                <td><button id="num+">+</button></td>
+            </tr>
+            <tr>
+               
+                <td><button id="num0">0</button></td>
+                <td><button id="num.">.</button></td>
+                <td><button id="num=">=</button></td>
+                <td><button id="num/">/</button></td>
+            </tr>
+        </table>
+    </div>
+    
+<script>
+    var display = document.getElementById("display");
+    
+    // AC Button
+    var btn_ac = document.getElementById("ac");
+    function ac_click(){
+        display.value = ""
+    }
+    btn_ac.addEventListener("click", ac_click);
+
+    // 7 Button
+    var btn_7 = document.getElementById("num7");
+    function click_7(){
+        display.value += "7"
+    }
+    btn_7.addEventListener("click",click_7)
+
+    // 8 Button
+    var btn_8 = document.getElementById("num8");
+    function click_8(){
+        display.value += "8";
+    }
+    btn_8.addEventListener("click",click_8);
+
+    // 9 button
+    var btn_9 = document.getElementById("num9");
+    function click_9(){
+    display.value +=  "9";
+    }
+    btn_9.addEventListener("click",click_9);
+
+    // x Button
+    var btn_x = document.getElementById("numx");
+    function click_x(){
+        display.value += "*";
+    }
+    btn_x.addEventListener("click",click_x);
+
+    // 4 Button
+    var btn_4 = document.getElementById("num4")
+    function click_4(){
+        display.value += "4";
+    }
+    btn_4.addEventListener("click",click_4);
+
+    // 5 button
+    var btn_5 = document.getElementById("num5")
+    function click_5(){
+        display.value += "5";
+    }
+    btn_5.addEventListener("click",click_5);
+
+    // 6 button
+    var btn_6 = document.getElementById("num6")
+    function click_6(){
+        display.value += "6";
+    }
+    btn_6.addEventListener("click",click_6);
+
+    // - button
+    var btn_minus = document.getElementById("num-")
+    function click_minus(){
+        display.value += "-";
+    }
+    btn_minus.addEventListener("click",click_minus);
+    
+    // 1 button
+    var btn_1 = document.getElementById("num1")
+    function click_1(){
+        display.value += "1";
+    }
+    btn_1.addEventListener("click",click_1);
+
+    // 2 button
+    var btn_2 = document.getElementById("num2")
+    function click_2(){
+        display.value += "2";
+    }
+    btn_2.addEventListener("click",click_2);
+
+    // 3 button
+    var btn_3 = document.getElementById("num3")
+    function click_3(){
+        display.value += "3";
+    }
+    btn_3.addEventListener("click",click_3);
+    // + button
+    var btn_plus = document.getElementById("num+")
+    function click_plus(){
+        display.value += "+";
+    }
+    btn_plus.addEventListener("click",click_plus);
+
+    // 0 button
+    var btn_0 = document.getElementById("num0")
+    function click_0(){
+        display.value += "0";
+    }
+    btn_0.addEventListener("click",click_0);
+
+    // . button
+    var btn_dot = document.getElementById("num.")
+    function click_dot(){
+        display.value += ".";
+    }
+    btn_dot.addEventListener("click",click_dot);
+
+    // = button
+    var btn_equal = document.getElementById("num=")
+    function click_equal(){
+        var result = eval(display.value)
+        display.value = result;
+        
+    }
+    btn_equal.addEventListener("click",click_equal);
+    // / button
+    var btn_div = document.getElementById("num/")
+    function click_div(){
+        display.value += "/";
+    }
+    btn_div.addEventListener("click",click_div);
+</script>
+
+</body>
+
+</html>

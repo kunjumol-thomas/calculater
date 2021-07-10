@@ -22,12 +22,20 @@ table, tr, th, td{
     background-color: #d8d5d5;
     color: black;
 }
-
 td>*{
-    padding: 15px;
-    font-size: 1.5em;
+    /* padding: 5px; */
+    font-size: 1.2em;
     color: #faf8f5;
 }
+
+@media screen and (min-width: 780px) {
+    td>*{
+        padding: 15px;
+        font-size: 1.5em;
+        color: #faf8f5;
+    }
+    
+  }
 
 td>input{
     color: black;
